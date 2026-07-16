@@ -45,5 +45,3 @@ cloud-init
 ## Contact
 
 London, UK. Open to Platform, DevOps, SRE and Cloud Engineering roles.
-
-<!-- profile -->
