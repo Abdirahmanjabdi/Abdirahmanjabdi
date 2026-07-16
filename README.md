@@ -2,7 +2,7 @@
 
 **Platform, DevOps and SRE. London.**
 
-Most learning repos show you the version that worked. Mine show what broke.
+Most learning repos show you the version that worked. Mine show what broke. 
 
 My first Terraform deploy failed silently. `terraform apply` succeeded, the instance was healthy,
 the site was dead. The cause was one line near the top of a log I had been reading from the bottom.
