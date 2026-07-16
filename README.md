@@ -68,3 +68,4 @@ Also:
 London, UK. Open to Platform, DevOps, SRE and Cloud Engineering roles.
 
 [LinkedIn](https://www.linkedin.com/in/abdirahman-jama-abdi-2a35a7305/)
+
