@@ -47,7 +47,6 @@ Multi-stage builds, Compose, and an NGINX reverse proxy in front of a Python app
 
 Fundamentals:
 [bash](https://github.com/Abdirahmanjabdi/devops-learning-bash) ·
-[linux](https://github.com/Abdirahmanjabdi/devops-learning-linux) ·
 [git](https://github.com/Abdirahmanjabdi/Git-labs)
 
 ## Trading systems
