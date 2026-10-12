@@ -69,11 +69,17 @@ Also:
 
 ## Stack
 
-**Infrastructure** Terraform · AWS (EC2, VPC, ALB, S3, CloudFront, Lambda) · Docker · Kubernetes · cloud-init
+**Infrastructure as code** Terraform · cloud-init · Docker
 
-**Observability and CI** Prometheus · Grafana · GitHub Actions
+**AWS** ECS Fargate · EKS · ECR · EC2 · VPC · ALB and NLB · RDS · ElastiCache · Amazon MQ · SNS · Route 53 · ACM · Secrets Manager · IAM and OIDC · S3 · CloudFront · Lambda
 
-**Systems** Linux · Bash · NGINX · PostgreSQL
+**Kubernetes** Helm · cert-manager · ExternalDNS · IRSA · ingress-nginx
+
+**Observability** Prometheus · Grafana · kube-prometheus-stack
+
+**CI/CD** GitHub Actions · ArgoCD (GitOps)
+
+**Systems** Linux · Bash · NGINX · PostgreSQL · Redis · RabbitMQ
 
 **Languages** Python · TypeScript · HCL · SQL · Java
 
