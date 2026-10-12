@@ -15,6 +15,20 @@ abstract, because latency, correctness and reliability aren't qualities there. T
 
 ## Infrastructure
 
+**[RTRP](https://github.com/Abdirahmanjabdi/RTRP)**
+A real-time trade risk platform, and the most complete build here. Four application services on
+ECS Fargate that never call each other directly, only through RabbitMQ: a FastAPI trade API, a
+risk engine, an IsolationForest anomaly detector, and an alerting service that fans into SNS.
+Postgres, Redis, Prometheus and Grafana around them. Ten Terraform modules with remote state and
+locking, three pipelines (build and deploy, plan and apply, manual destroy), GitHub OIDC so there
+are no long-lived AWS keys, and ADRs for the big decisions.
+
+**[EKS-RTRP](https://github.com/Abdirahmanjabdi/EKS-RTRP)**
+The same platform migrated from ECS to Kubernetes. One Helm chart deployed through ArgoCD: CI builds
+and tags the images and updates Git, and ArgoCD reconciles the cluster. TLS through cert-manager and
+Let's Encrypt, DNS through ExternalDNS, pod-level AWS access through IRSA, and monitoring through
+kube-prometheus-stack. Includes a full mapping of every ECS concept to its EKS equivalent.
+
 **[Terraform](https://github.com/Abdirahmanjabdi/Terraform)**
 WordPress and NGINX on AWS EC2, solved two ways. An imperative bash `user_data` script that raced
 `unattended-upgrades` for the dpkg lock and lost, and a declarative cloud-init file that couldn't.
@@ -25,7 +39,7 @@ VPC networking, application load balancing, S3 with CloudFront, and a serverless
 scratch and documented with architecture diagrams.
 
 **[livestock-ledger](https://github.com/Abdirahmanjabdi/livestock-ledger)**
-The most complete build here. Ethereum contract with indexed PostgreSQL read models, Next.js
+Ethereum contract with indexed PostgreSQL read models, Next.js
 frontend, Prometheus and Grafana observability, Kubernetes manifests, Terraform, GitHub Actions CI.
 
 **[docker-learning](https://github.com/Abdirahmanjabdi/docker-learning)**
