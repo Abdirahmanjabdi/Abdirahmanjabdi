@@ -35,8 +35,10 @@ WordPress and NGINX on AWS EC2, solved two ways. An imperative bash `user_data` 
 Both written up in full, including the six cascading errors that came from one root cause.
 
 **[AWS](https://github.com/Abdirahmanjabdi/AWS)**
-VPC networking, application load balancing, S3 with CloudFront, and a serverless API. Built from
-scratch and documented with architecture diagrams.
+AWS fundamentals built by hand, each with an architecture diagram. A custom VPC with public and
+private subnets, NAT and a bastion host, complete. An ALB across two AZs with security-group
+chaining, built but with unhealthy targets because the user-data never ran on first boot, and the
+write-up says so. S3 with CloudFront and a serverless API are next.
 
 **[livestock-ledger](https://github.com/Abdirahmanjabdi/livestock-ledger)**
 Ethereum contract with indexed PostgreSQL read models, Next.js
@@ -53,7 +55,7 @@ Fundamentals:
 
 **[VFund](https://github.com/Abdirahmanjabdi/VFund)**
 Open-source crypto quant research platform, built around not fooling yourself. Honest backtesting
-through to live paper trading. 70 tests, CI on every push, MIT licensed.
+through to live paper trading. 290 tests run in CI on every push to main, MIT licensed.
 
 **[AIRO / Sentinel Trading](https://github.com/Abdirahmanjabdi/AIRO)**
 A behavioural risk engine for MetaTrader 5. Detects revenge entries, oversized positions and
@@ -70,7 +72,7 @@ Also:
 
 **Infrastructure as code** Terraform · cloud-init · Docker
 
-**AWS** ECS Fargate · EKS · ECR · EC2 · VPC · ALB and NLB · RDS · ElastiCache · Amazon MQ · SNS · Route 53 · ACM · Secrets Manager · IAM and OIDC · S3 · CloudFront · Lambda
+**AWS** ECS Fargate · EKS · ECR · EC2 · VPC · ALB and NLB · RDS · ElastiCache · Amazon MQ · SNS · Route 53 · ACM · Secrets Manager · IAM and OIDC · S3
 
 **Kubernetes** Helm · cert-manager · ExternalDNS · IRSA · ingress-nginx
 
